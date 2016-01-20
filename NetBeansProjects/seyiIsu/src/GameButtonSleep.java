@@ -10,10 +10,12 @@ public class GameButtonSleep extends GameButtonParent{
     }
     
     public void sethealth(){
-        healthval+=10;
+        healthval-=10;
+        moralval+=2;
+        smartsval+=4;
     }
     
-    public int gethealth(){
+    public int gethealth(){ 
         return healthval;
     }
 }
